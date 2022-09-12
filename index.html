@@ -10,39 +10,71 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/calculadora.css">
 
-
+  <!-- Links JS -->
+  <script src="./js/calculadora.js" defer></script>
   <title>Calculadora</title>
 </head>
 <body>
   <div class="container">
-    <div class="resultado"></div>
-    <div class="teclado">
-      <button type="button" class="tecla"><img src="./img/icon/backspace.svg" alt=""></button>
-      <button type="button" class="tecla">(</button>
-      <button type="button" class="tecla">)</button>
-      <button type="button" class="tecla">mod</button>
-      <button type="button" class="tecla"><img src="./img/icon/pi.svg" alt=""></button>
-      <button type="button" class="tecla">7</button>
-      <button type="button" class="tecla">8</button>
-      <button type="button" class="tecla">9</button>
-      <button type="button" class="tecla"><img src="./img/icon/divide.svg" alt=""></button>
-      <button type="button" class="tecla"><img src="./img/icon/raiz.svg" alt=""></button>
-      <button type="button" class="tecla">4</button>
-      <button type="button" class="tecla">5</button>
-      <button type="button" class="tecla">6</button>
-      <button type="button" class="tecla"><img src="./img/icon/aoquadrado.svg" alt=""></button>
-      <button type="button" class="tecla backspace">x</button>
-      <button type="button" class="tecla">1</button>
-      <button type="button" class="tecla">2</button>
-      <button type="button" class="tecla">3</button>
-      <button type="button" class="tecla">-</button>
-      <button type="button" class="tecla">=</button>
-      <button type="button" class="tecla">0</button>
-      <button type="button" class="tecla">,</button>
-      <button type="button" class="tecla">%</button>
-      <button type="button" class="tecla">+</button>
-      <button type="button" class="tecla">=</button>
-    </div>
+    <p id="resultado"></p>
+    <table class="teclado">
+      <tr>
+        <td>
+          <button type="button" class="tecla" onclick="apagar()"><img src="./img/icon/backspace.svg" alt=""></button>
+        </td>
+        <td><button type="button" class="tecla" onclick="insert('(')">(</button></td>
+        <td><button type="button" class="tecla" onclick="insert(')')">)</button></td>
+        <!-- <td><button type="button" class="tecla" onclick="insert('mod')">mod</button></td> -->
+        <!-- <td><button type="button" class="tecla" onclick="insert('π')"><img src="./img/icon/pi.svg" alt=""></button></td> -->
+        <td><button type="button" class="tecla" onclick="insert('%')">%</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="tecla" onclick="insert('7')">7</button></td>
+        <td><button type="button" class="tecla" onclick="insert('8')">8</button></td>
+        <td><button type="button" class="tecla" onclick="insert('9')">9</button></td>
+        <td>
+          <button type="button" class="tecla" onclick="insert('/')"><img src="./img/icon/divide.svg" alt=""></button>
+        </td>
+        <!-- <td>
+          <button type="button" class="tecla" onclick="insert('√')"><img src="./img/icon/raiz.svg" alt=""></button>
+        </td> -->
+      </tr>
+      <tr>
+        <td><button type="button" class="tecla" onclick="insert('4')">4</button></td>
+        <td><button type="button" class="tecla" onclick="insert('5')">5</button></td>
+        <td><button type="button" class="tecla" onclick="insert('6')">6</button></td>
+        <!-- <td>
+          <button type="button" class="tecla" onclick="insert('**')"><img src="./img/icon/aoquadrado.svg" alt=""></button>
+        </td> -->
+        <!-- <td><button type="button" class="tecla backspace" onclick="aoquadrado('*')">x</button></td> -->
+        <td><button type="button" class="tecla" onclick="insert('-')">-</button></td>
+      </tr>
+      
+     <tr>
+      <td><button type="button" class="tecla" onclick="insert('1')">1</button></td>
+      <td><button type="button" class="tecla" onclick="insert('2')">2</button></td>
+      <td><button type="button" class="tecla" onclick="insert('3')">3</button></td>
+      
+      <td><button type="button" class="tecla igual" onclick="calcular()">=</button></td>
+      
+     </tr> 
+      <tr>
+        <td><button type="button" class="tecla" onclick="insert('0')">0</button></td>
+        <td><button type="button" class="tecla" onclick="insert('.')">.</button></td>
+        <td><button type="button" class="tecla" onclick="insert('+')">+</button></td>
+        <td><button type="button" class="tecla" onclick="insert('*')">x</button></td>
+        
+        
+      </tr>
+  
+    </table>
   </div>
+  <script>
+    function instert(num) {
+    var numero = document.getElementById('resultado').innerHTML;
+    document.getElementById('resultado').innerHTML = numero + num;
+}
+  </script>
+
 </body>
 </html>

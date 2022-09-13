@@ -31,9 +31,21 @@
   cursor: pointer;
 }
 .igual {
-  background-color: green;
+  height: 100px;
 }
+
+.zero {
+  width: 124px;
+}
+
 .tecla:hover {
   background: rgba(30, 30, 30, 0.9);
 }
 
+.igual:hover {
+  background-color: green;
+}
+
+.backspace:hover {
+  background-color: red;
+}

@@ -20,51 +20,42 @@
     <table class="teclado">
       <tr>
         <td>
-          <button type="button" class="tecla" onclick="apagar()"><img src="./img/icon/backspace.svg" alt=""></button>
+          <button type="button" class="tecla backspace" onclick="apagar()"><img src="./img/icon/backspace.svg" alt=""></button>
         </td>
-        <td><button type="button" class="tecla" onclick="insert('(')">(</button></td>
-        <td><button type="button" class="tecla" onclick="insert(')')">)</button></td>
-        <!-- <td><button type="button" class="tecla" onclick="insert('mod')">mod</button></td> -->
-        <!-- <td><button type="button" class="tecla" onclick="insert('π')"><img src="./img/icon/pi.svg" alt=""></button></td> -->
-        <td><button type="button" class="tecla" onclick="insert('%')">%</button></td>
+        <td><button type="button" class="tecla" onclick="insert('AC')">AC</button></td>
+        <td><button type="button" class="tecla" onclick="insert('*')">x</button></td>
+        <td><button type="button" class="tecla" onclick="insert('-')">-</button></td>
       </tr>
+      
       <tr>
         <td><button type="button" class="tecla" onclick="insert('7')">7</button></td>
         <td><button type="button" class="tecla" onclick="insert('8')">8</button></td>
         <td><button type="button" class="tecla" onclick="insert('9')">9</button></td>
         <td>
-          <button type="button" class="tecla" onclick="insert('/')"><img src="./img/icon/divide.svg" alt=""></button>
+          <button type="button" class="tecla" onclick="insert('/')">/</button>
         </td>
-        <!-- <td>
-          <button type="button" class="tecla" onclick="insert('√')"><img src="./img/icon/raiz.svg" alt=""></button>
-        </td> -->
       </tr>
+      
       <tr>
         <td><button type="button" class="tecla" onclick="insert('4')">4</button></td>
         <td><button type="button" class="tecla" onclick="insert('5')">5</button></td>
         <td><button type="button" class="tecla" onclick="insert('6')">6</button></td>
-        <!-- <td>
-          <button type="button" class="tecla" onclick="insert('**')"><img src="./img/icon/aoquadrado.svg" alt=""></button>
-        </td> -->
-        <!-- <td><button type="button" class="tecla backspace" onclick="aoquadrado('*')">x</button></td> -->
-        <td><button type="button" class="tecla" onclick="insert('-')">-</button></td>
+        <td><button type="button" class="tecla" onclick="insert('+')">+</button></td>
+        
       </tr>
       
-     <tr>
+      <tr>
       <td><button type="button" class="tecla" onclick="insert('1')">1</button></td>
       <td><button type="button" class="tecla" onclick="insert('2')">2</button></td>
       <td><button type="button" class="tecla" onclick="insert('3')">3</button></td>
       
-      <td><button type="button" class="tecla igual" onclick="calcular()">=</button></td>
+      <td rowspan="2"><button type="button" class="tecla igual" onclick="calcular()">=</button></td>
       
-     </tr> 
+      </tr> 
+      
       <tr>
-        <td><button type="button" class="tecla" onclick="insert('0')">0</button></td>
+        <td colspan="2"><button type="button" class="tecla zero" onclick="insert('0')">0</button></td>
         <td><button type="button" class="tecla" onclick="insert('.')">.</button></td>
-        <td><button type="button" class="tecla" onclick="insert('+')">+</button></td>
-        <td><button type="button" class="tecla" onclick="insert('*')">x</button></td>
-        
-        
       </tr>
   
     </table>

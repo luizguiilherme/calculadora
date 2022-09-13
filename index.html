@@ -22,9 +22,9 @@
         <td>
           <button type="button" class="tecla backspace" onclick="apagar()"><img src="./img/icon/backspace.svg" alt=""></button>
         </td>
-        <td><button type="button" class="tecla" onclick="insert('AC')">AC</button></td>
-        <td><button type="button" class="tecla" onclick="insert('*')">x</button></td>
-        <td><button type="button" class="tecla" onclick="insert('-')">-</button></td>
+        <td><button type="button" class="tecla" onclick="limpar('')">AC</button></td>
+        <td><button type="button" class="tecla" onclick="sinal('*')">X</button></td>
+        <td><button type="button" class="tecla" onclick="sinal('-')">-</button></td>
       </tr>
       
       <tr>
@@ -32,7 +32,7 @@
         <td><button type="button" class="tecla" onclick="insert('8')">8</button></td>
         <td><button type="button" class="tecla" onclick="insert('9')">9</button></td>
         <td>
-          <button type="button" class="tecla" onclick="insert('/')">/</button>
+          <button type="button" class="tecla" onclick="sinal('/')">/</button>
         </td>
       </tr>
       
@@ -40,7 +40,7 @@
         <td><button type="button" class="tecla" onclick="insert('4')">4</button></td>
         <td><button type="button" class="tecla" onclick="insert('5')">5</button></td>
         <td><button type="button" class="tecla" onclick="insert('6')">6</button></td>
-        <td><button type="button" class="tecla" onclick="insert('+')">+</button></td>
+        <td><button type="button" class="tecla" onclick="sinal('+')">+</button></td>
         
       </tr>
       
@@ -55,7 +55,7 @@
       
       <tr>
         <td colspan="2"><button type="button" class="tecla zero" onclick="insert('0')">0</button></td>
-        <td><button type="button" class="tecla" onclick="insert('.')">.</button></td>
+        <td><button type="button" class="tecla" onclick="ponto('.')">.</button></td>
       </tr>
   
     </table>
